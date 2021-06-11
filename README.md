@@ -1,16 +1,16 @@
-##InstalaciÛn
+##Instalaci√≥n
 Primero, nuestra carpeta del proyecto debe estar en la siguiente ruta:
 ```bash
 C:\xampp\htdocs\
 ```
-El siguiente paso es configurar los siguientes archivos para poder visualzar la p·gina.
+El siguiente paso es configurar los siguientes archivos para poder visualzar la p√°gina.
 ##Archivo *httpd-vhosts*
 El primer archivo a editar se encuentra en la siguiente ruta:
 ```bash
 C:\xampp\apache\conf\extra\httpd-vhosts
 ```
-Lo abrimos con el editor de cÛdigo de nuestra preferencia, en mi caso VS.
-Al final del documento agregamos el siguiente cÛdigo sustituyendo "carpeta" por el nombre de tu carpeta.
+Lo abrimos con el editor de c√≥digo de nuestra preferencia, en mi caso VS.
+Al final del documento agregamos el siguiente c√≥digo sustituyendo "carpeta" por el nombre de tu carpeta.
 ```conf
 <VirtualHost *:80>
     ServerAdmin example2.com
@@ -26,18 +26,18 @@ Al final del documento agregamos el siguiente cÛdigo sustituyendo "carpeta" por 
 </VirtualHost>
 ```
 ##Archivo *hosts*
-El segundo archivo a editar est· en la ruta:
+El segundo archivo a editar est√° en la ruta:
 ```bash
 C:\Windows\System32\drivers\etc\hosts
 ```
-Agregamos la siguiente lÌnea al final del archivo:
+Agregamos la siguiente l√≠nea al final del archivo:
 ```config
 	127.0.0.1       example2.com
 ``` 
-##ConfiguraciÛn de archivos internos
-Para que el proyecto funcione correctamente hay que cambiar todo lo que diga example2.com de cada archivo del proyecto por el nombre de la carpeta en la que estÈn tus archivos.
+##Configuraci√≥n de archivos internos
+Para que el proyecto funcione correctamente hay que cambiar todo lo que diga example2.com de cada archivo del proyecto por el nombre de la carpeta en la que est√©n tus archivos.
 
 Guardamos los archivos y abrimos el panel de control de Xampp para encender Apache y MySQL.
-Cuando estos estÈn encendidos,vamos a nuestro navegador y colocamos el nombre de la carpeta donde se encuentra el proyecto y damos entrar.
+Cuando estos est√©n encendidos,vamos a nuestro navegador y colocamos el nombre de la carpeta donde se encuentra el proyecto y damos entrar.
 
 Listo, ya tenemos nuestro proyecto de forma local.
