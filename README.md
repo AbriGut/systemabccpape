@@ -1,16 +1,24 @@
-##Instalación
+## Instalación
+
 Primero, nuestra carpeta del proyecto debe estar en la siguiente ruta:
+
 ```bash
 C:\xampp\htdocs\
 ```
+
 El siguiente paso es configurar los siguientes archivos para poder visualzar la página.
-##Archivo *httpd-vhosts*
+
+## Archivo *httpd-vhosts*
+
 El primer archivo a editar se encuentra en la siguiente ruta:
+
 ```bash
 C:\xampp\apache\conf\extra\httpd-vhosts
 ```
+
 Lo abrimos con el editor de código de nuestra preferencia, en mi caso VS.
 Al final del documento agregamos el siguiente código sustituyendo "carpeta" por el nombre de tu carpeta.
+
 ```conf
 <VirtualHost *:80>
     ServerAdmin example2.com
@@ -25,16 +33,23 @@ Al final del documento agregamos el siguiente código sustituyendo "carpeta" por
     </Directory>
 </VirtualHost>
 ```
-##Archivo *hosts*
+
+## Archivo *hosts*
+
 El segundo archivo a editar está en la ruta:
+
 ```bash
 C:\Windows\System32\drivers\etc\hosts
 ```
+
 Agregamos la siguiente línea al final del archivo:
+
 ```config
 	127.0.0.1       example2.com
 ``` 
-##Configuración de archivos internos
+
+## Configuración de archivos internos
+
 Para que el proyecto funcione correctamente hay que cambiar todo lo que diga example2.com de cada archivo del proyecto por el nombre de la carpeta en la que estén tus archivos.
 
 Guardamos los archivos y abrimos el panel de control de Xampp para encender Apache y MySQL.
